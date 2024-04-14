@@ -1,14 +1,17 @@
-s = input()
 a = int(input())
-found = False  # 발견 여부를 나타내는 변수
+b = int(input())
+c = int(input())
+d = int(input())
+e = int(input())
 
-for i in range(a):
-    b = input()
-    c = input()
-    if b + c == s:
-        print("1")
-        found = True
-        break
-
-if not found:  # 발견하지 못한 경우에만 실행됨
-    print("0")
+if a < 40:
+    a = 40
+if b < 40:
+    b = 40
+if c < 40:
+    c = 40
+if d < 40:
+    d = 40
+if e < 40:
+    e = 40
+print((a + b + c + d + e) // 5)
